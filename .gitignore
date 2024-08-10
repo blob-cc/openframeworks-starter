@@ -1,0 +1,14 @@
+# OpenFrameworks specific
+bin/data/
+bin/*.o
+bin/*.dSYM/
+bin/*.app/
+bin/*.exe
+*.o
+*.d
+*.dSYM
+*.exe
+*.app
+
+# OSX
+.DS_Store
