@@ -23,3 +23,21 @@ void ofApp::keyPressed(int key){
 }
 
 // Implement other methods similarly
+
+
+
+// #include "ofApp.h"
+
+// void ofApp::setup(){
+//     ofSetCircleResolution(100);
+// }
+
+// void ofApp::draw(){
+//     ofSetColor(0);
+//     if (ofGetMousePressed()) {
+//         ofFill();
+//     } else {
+//         ofNoFill();
+//     }
+//     ofDrawCircle(ofGetMouseX(), ofGetMouseY(), 40);
+// }
