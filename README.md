@@ -1,5 +1,10 @@
 # cc-openframeworks
 
+OpenFrameworks is a versatile C++ toolkit for creative coding. It offers a powerful and flexible platform for artists, designers, and researchers to create a wide range of interactive projects, from simple 2D animations to complex 3D installations. OpenFrameworks provides access to various libraries for graphics, sound, video, and more.
+
+
+
+
 **OpenFrameworks Project Template**
 
 This is a template repository for creative coding projects using OpenFrameworks.
@@ -18,3 +23,7 @@ This is a template repository for creative coding projects using OpenFrameworks.
 ## License
 
 [Your preferred license]
+
+
+
+https://openframeworks.cc/
