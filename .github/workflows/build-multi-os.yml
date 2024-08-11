@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build and Test on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up dependencies
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y freeglut3-dev libglew-dev
+
+    - name: Build on Linux/MacOS
+      if: matrix.os != 'windows-latest'
+      run: |
+        make
+
+    - name: Build on Windows
+      if: matrix.os == 'windows-latest'
+      run: |
+        msbuild /p:Configuration=Release /t:Build
+
+    - name: Run Tests
+      run: |
+        ./bin/testRunner
