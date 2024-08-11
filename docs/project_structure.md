@@ -19,4 +19,8 @@ openFrameworksProjectTemplate/
     └── custom_lib/
         ├── custom_lib.h
         └── custom_lib.cpp
+
+tests/
+├── testMain.cpp
+└── ofAppTest.cpp
 ```
