@@ -1,0 +1,10 @@
+site_name: OpenFrameworks Project Template
+theme: readthedocs
+nav:
+  - Home: index.md
+  - Setup: setup.md
+  - Development:
+      - Building: build.md
+      - Testing: testing.md
+  - API Reference: api.md
+  - Contributing: contributing.md
