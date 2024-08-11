@@ -25,10 +25,26 @@ This is a template repository for creative coding projects using OpenFrameworks.
 - Customize `src/ofApp.cpp` and `src/ofApp.h` for your project's logic.
 - Add additional libraries in `libs/` and manage addons in `addons.make`.
 
-## License
-
-[Your preferred license]
 
 
+- https://openframeworks.cc/
 
-https://openframeworks.cc/
+
+
+---
+
+## Colophon
+
+### Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+### License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for details.
+
+### Contact
+
+Swing is developed by [Scape Agency](https://www.scape.agency). For any inquiries or support, please contact us at [info@scape.agency](info@scape.agency).
+
+---
