@@ -54,3 +54,15 @@ clean:
 	rm -f $(BIN_DIR)/$(BIN_NAME)
 
 .PHONY: clean
+
+
+TEST_SRC = $(wildcard tests/*.cpp)
+TEST_OBJ = $(TEST_SRC:.cpp=.o)
+
+test: $(TEST_OBJ)
+    $(CXX) $(TEST_OBJ) -o $(BIN_DIR)/testRunner $(LDFLAGS) $(LIBS)
+    $(BIN_DIR)/testRunner
+
+
+format:
+    clang-format -i src/*.cpp src/*.h
